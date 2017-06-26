@@ -1,7 +1,9 @@
 
 <div class="main">
+  <div class="searchArea">
 <input name="searh" #searchTerm placeholder="Enter Anything!" >
   <button (click)="searchClick(searchTerm)">Search It!</button>
+  </div>
 <div *ngFor="let gif of gifs">
   <img src="{{gif.images.original.url}}"/>
 </div>
